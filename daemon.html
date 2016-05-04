@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>index</title>
+	</head>
+	
+	<body>
+		
+		
+		<input id="button" type="button" value="遮罩" />
+		
+		<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+		<script type="text/javascript" src="js/zbss.js"></script>
+		<script>
+				
+			//var m = createZbss();
+			$("#button").click(function(){
+				zbss.maskShow("正在加载，请稍后...");
+				setTimeout(function(){
+					zbss.maskHide();
+				},3000);
+			});
+		</script>
+	</body>
+</html>
